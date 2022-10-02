@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ################################### html element styling#################################### */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+/* ****************************************************************************************************** */
+
+
+/* ###############################################Uitlty classes########################################## */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.6rem;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-gray {
+    color: #555;
+}
+
+.bg-dark {
+    background: #263238;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primery {
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.btn-primery:hover {
+    background-color: #ddd;
+}
+
+.btn-secondary {
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background-color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #fcf3f2;
+}
+
+
+/* *********************************************************************************************************** */
+
+
+/* #################################################### Header styling########################################### */
+
+.header {
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Img/header-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav-bar {
+    /* border: 2px solid red; */
+    padding: 1rem;
+}
+
+.nav-bar .nav-item {
+    padding: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.nav-bar .logo {
+    float: left;
+    /* font-size: 3.6rem; */
+}
+
+.nav-bar .nav-items {
+    margin-top: 1rem;
+    float: right;
+}
+
+.nav-bar a:link,
+.nav-bar a:visited {
+    color: #f4f4f4;
+}
+
+.nav-bar a {
+    padding-bottom: 0.3rem;
+}
+
+.nav-bar a:hover {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.nav-bar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ###################################3###### Header content################################################# */
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p {
+    text-transform: uppercase;
+}
+
+.header-content {
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+
+/* ************************************************************************************************************ */
+
+
+/* ########################################## Section Showcase styling ############################################ */
+
+.showcase {
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row {
+    height: 350px;
+    /* border: 2px solid red; */
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img,
+.row2 .text {
+    float: left;
+    width: 50%;
+}
+
+.row2 .img,
+.row1 .text {
+    float: right;
+    width: 50%;
+}
+
+.row .img {
+    /* border: 6px solid green; */
+    /* width: 50%; */
+    height: 100%;
+}
+
+.row .text {
+    /* border: 2px solid blue; */
+    padding: 3rem;
+}
+
+.row .img img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*  #### object ka display kharab ni hoga scrrn choti krny par#### */
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ########################################## Features section styling############################################## */
+
+.features {
+    padding: 10rem 0;
+}
+
+.box {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+}
+
+.box-1,
+.box-3 {
+    background-color: #263238;
+    color: #fff;
+}
+
+.box-2 {
+    background: linear-gradient(25deg, #b64c7f, #ee4758 50%);
+    color: #fff;
+}
+
+.box-wrapper {
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.411);
+}
+
+.box-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box-wrapper .icon {
+    padding: 0.5em;
+}
+
+
+/* ################################### Footer section styling ################################################# */
+
+.footer {
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer .social-media-links i {
+    margin: 2rem;
+}
+
+
+/* ##################################### About Page Styling####################################################### */
+
+.about {
+    padding: 5rem 0;
+}
+
+.about-heading::after {
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+
+/* ##################################### wrapper styling###################################### */
+
+.about-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper .left {
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right {
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before {
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+
+/* ################################## count Styling####################################### */
+
+.counts {
+    margin-top: 3rem;
+}
+
+.count-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.counts::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.count-item span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.count-item p {
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+
+/* ####################################### Banner CTA############################################################## */
+
+.cta-banner {
+    background: linear-gradient(25deg, #b64c7f, #ee4758 50%);
+    color: #f4f4f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+    margin-top: 3rem;
+}
+
+.cta-banner-left {
+    width: 60%;
+    float: left;
+}
+
+.cta-banner-right {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.cta-banner-line {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cta {
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+    margin: 1rem;
+}
+
+.cta-banner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ################################################# Contact page Styling############################# */
+
+.contact-form {
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+
+.form-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .company-address {
+    height: 760px;
+    background: #fff;
+    /* border: 4px dotted green; */
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+
+.form-wrapper .company-address i {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group {
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img {
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+/* ##################################################form styling####################################### */
+
+.form-wrapper .form {
+    height: 760px;
+    font-size: 1.6rem;
+    background: #fff;
+    /* border: 2px solid yellow; */
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+
+.form h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 3px solid #ee4758;
+}
+
+.form-wrapper .form label {
+    display: block;
+}
+
+.form-wrapper .form input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group {
+    margin-bottom: 1.3rem;
+}
+
+.form-wrapper .form label::after {
+    content: "*";
+    color: #e63946;
+}
+
+.form-wrapper .form textarea {
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 50%;
+    }
+    .nav-bar .nav-items,
+    .nav-bar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .header-content .main-heading {
+        display: none;
+    }
+    .row {
+        height: auto;
+        width: 100%;
+    }
+    .row .img,
+    .row .text {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box {
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.411);
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+    .features .box-2,
+    .features .box-3 {
+        margin-top: 7rem;
+    }
+    .box-wrapper {
+        box-shadow: none;
+    }
+    .cta-banner-left,
+    .cta-banner-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .btn-cta {
+        font-size: 2rem;
+    }
+    .form-wrapper .company-address {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .form-wrapper .form {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(min-width:501px) and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    .nav-bar .nav-items,
+    .nav-bar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* .header-content .main-heading {
+        display: none;
+    } */
+    .row {
+        height: auto;
+        width: 100%;
+    }
+    .row .img,
+    .row .text {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box {
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.411);
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+    .features .box-2,
+    .features .box-3 {
+        margin-top: 7rem;
+    }
+    .box-wrapper {
+        box-shadow: none;
+    }
+    .cta-banner-left,
+    .cta-banner-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .btn-cta {
+        font-size: 2rem;
+    }
+    .form-wrapper .company-address {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .form-wrapper .form {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(min-width:769) and (ma-width:1200px) {
+    html {
+        font-size: 56.25%;
+    }
+    .row .text-box h2 {
+        font-size: 2.2rem;
+        font-weight: 500px;
+    }
+}
+
+@media(orientation: landscape) and (max-height:500px) {
+    .header {
+        height: 90vmax;
+    }
+}
